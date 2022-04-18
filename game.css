@@ -21,3 +21,23 @@
 }
 
 .choice-text { padding: 1.5rem; width: 100%;}
+
+.correct { background-color: #28A745; }
+
+.incorrect { background-color: #DC3545;}
+
+/* HUD */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
