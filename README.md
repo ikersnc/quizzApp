@@ -1,2 +1,2 @@
 # quizzApp
-Aplicación Web de preguntas y respuestas
+Aplicación Web de preguntas y respuestas tipo Trivial
