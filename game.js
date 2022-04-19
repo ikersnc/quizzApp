@@ -10,32 +10,19 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-let questions = [
-    {
-        question: '¿Dentro de qué elemento HTML metemos Javascript?',
-        choice1: '<script>',
-        choice2: '<javascript>',
-        choice3: '<js>',
-        choice4: '<scripting>',
-        answer: 1
-    },
-    {
-        question: '¿Cuál es la sintaxis correcta para referirse a un script externo llamado "xxx.js"?',
-        choice1: '<script href="xxx.js">',
-        choice2: '<script name="xxx.js">',
-        choice3: '<script src="xxx.js">',
-        choice4: '<script file="xxx.js">',
-        answer: 3
-    },
-    {
-        question: '¿Cómo se escribe "Hello world" en un alert?',
-        choice1: 'msgBox("Hello world");',
-        choice2: 'alertBox("Hello world");',
-        choice3: 'msg("Hello world");',
-        choice4: 'alert("Hello world");',
-        answer: 4
-    },
-];
+let questions = [];
+
+fetch('questions.json')
+    .then( res => {
+        return res.json();
+    })
+    .then(loadedQuestions => {
+        questions = loadedQuestions;
+        startGame();
+    })
+    .catch( err => {
+        console.error(err);
+    });
 
 /* CONSTANTES */
 
@@ -100,4 +87,3 @@ incrementScore = num => {
     scoreText.innerText = score;
 };
 
-startGame();
