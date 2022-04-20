@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+
 :root {
-    background-color: #ECF5FF;
     font-size: 62.5%;
+    background-color: rgba(204, 51, 0, 0.8);
+    font-family: 'Playfair Display', serif;
 }
 
 * {
@@ -15,7 +18,7 @@ h1, h2, h3, h4 { margin-bottom: 1rem; }
 
 h1 {
     font-size: 5.4rem;
-    color: #56A5EB;
+    color: whitesmoke;
     margin-bottom: 5rem;
 }
 
@@ -73,11 +76,11 @@ h3 {
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #56A5EB;
+    border: 0.1rem solid black;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #56A5EB;
-    background-color: white;
+    color: black;
+    background-color: whitesmoke;
 }
 
 .btn:hover {
