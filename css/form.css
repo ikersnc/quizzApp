@@ -1,15 +1,16 @@
-form {
+#form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
-form > label { 
+#form > label { 
     text-align: left;
     width: 45rem;
 }
 
-form > * { font-size: 2.5rem;}
-form > input { width: 45rem; margin-bottom: 1.5rem;}
-form > select { width: 45rem; margin-bottom: 1.5rem;}
+#form > * { font-size: 2.5rem;}
+#form > input { width: 45rem; margin-bottom: 1.5rem;}
+#form > select { width: 45rem; margin-bottom: 1.5rem;}

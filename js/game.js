@@ -11,10 +11,27 @@ let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+//GENERAR URL PARA LA PARTIDA ACORDE A LO ELEGIDO EN EL FORMULARIO
+let categoria = document.getElementsByName('trivia_category');
+let dificultad = document.getElementsByName('dificultad');
+let numPeg = document.getElementById('numPeg');
+let startGame = document.getElementById('startGame');
+let url = 'https://opentdb.com/api.php?amount=';
+let form = document.getElementById('form');
+let juego = document.getElementById('juego');
 
+startGame.addEventListener('click', function() {
+
+    form.classList.add('hidden');
+    juego.classList.remove('hidden');
+    juego.classList.add('container');
+
+    url += `${numPeg.value}&category=${categoria[0].value}&difficulty=${dificultad[0].value}&type=multiple`;
+    console.log(url);
+//
 let questions = [];
 //https://opentdb.com/
-fetch('https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple')
+fetch(url)
     .then( res => {
         return res.json();
     })
@@ -106,4 +123,5 @@ incrementScore = num => {
     score += num;
     scoreText.innerText = score;
 };
+});
 
