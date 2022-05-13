@@ -17,7 +17,7 @@
 
 .hidden {display: none !important;}
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     #form > label { 
         text-align: left;
         width: 35rem;
