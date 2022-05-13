@@ -15,12 +15,12 @@ let availableQuestions = [];
 let categoria = document.getElementsByName('trivia_category');
 let dificultad = document.getElementsByName('dificultad');
 let numPeg = document.getElementById('numPeg');
-let startGame = document.getElementById('startGame');
+let startToPlay = document.getElementById('startGame');
 let url = 'https://opentdb.com/api.php?amount=';
 let form = document.getElementById('form');
 let juego = document.getElementById('juego');
 
-startGame.addEventListener('click', function() {
+startToPlay.addEventListener('click', () => {
 
     form.classList.add('hidden');
     juego.classList.remove('hidden');
