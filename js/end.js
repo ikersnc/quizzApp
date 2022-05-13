@@ -11,7 +11,7 @@ userName.addEventListener('keyup', () => {
     saveScore.disabled = !userName.value;
 });
 
-saveHighScore = (e) => {
+saveScore.addEventListener('click', e => {
     e.preventDefault();
 
     const score = {
@@ -26,4 +26,4 @@ saveHighScore = (e) => {
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('/');
-};
+});
