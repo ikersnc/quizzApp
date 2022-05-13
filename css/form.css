@@ -16,3 +16,14 @@
 #form > select { width: 45rem; margin-bottom: 1.5rem;}
 
 .hidden {display: none !important;}
+
+@media screen and (max-width: 400px) {
+    #form > label { 
+        text-align: left;
+        width: 35rem;
+    }
+    
+    #form > * { font-size: 2.5rem;}
+    #form > input { width: 35rem; margin-bottom: 1.5rem;}
+    #form > select { width: 35rem; margin-bottom: 1.5rem;}
+}
