@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+
 form {
     width: 100%;
     display: flex;
@@ -14,4 +16,6 @@ input {
     box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
 
-input::placeholder {color: #AAA;}
+.btn {font-family: 'Playfair Display', serif;}
+
+input::placeholder {color: #AAA; font-family: 'Playfair Display', serif;}
