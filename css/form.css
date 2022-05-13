@@ -14,3 +14,5 @@
 #form > * { font-size: 2.5rem;}
 #form > input { width: 45rem; margin-bottom: 1.5rem;}
 #form > select { width: 45rem; margin-bottom: 1.5rem;}
+
+.hidden {display: none !important;}
