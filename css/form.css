@@ -20,10 +20,12 @@
 @media screen and (max-width: 450px) {
     #form > label { 
         text-align: left;
-        width: 35rem;
+        width: 90vw;
     }
     
     #form > * { font-size: 2.5rem;}
-    #form > input { width: 35rem; margin-bottom: 1.5rem;}
-    #form > select { width: 35rem; margin-bottom: 1.5rem;}
+    #form > input { width: 90vw; margin-bottom: 1.5rem;}
+    #form > select { width: 90vw; margin-bottom: 1.5rem;}
+
+    .btn {width: 90vw;}
 }
